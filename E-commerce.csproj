@@ -70,6 +70,7 @@
     <Content Include="Components\Carrello.aspx" />
     <Content Include="Components\Details.aspx" />
     <Content Include="Components\Home.aspx" />
+    <Content Include="Components\Style\assets\database caffé.txt" />
     <Content Include="Components\Style\assets\_0a073014-c9ee-4f21-8c66-a98976b080aa.jpg" />
     <Content Include="Components\Style\StyleSheet1.css" />
     <Content Include="Global.asax" />

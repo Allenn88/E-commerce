@@ -1,0 +1,22 @@
+CREATE TABLE [dbo].[Prodotti] (
+    [IDProdotto] INT IDENTITY(1,1) PRIMARY KEY,
+    [Marca] NVARCHAR(255),
+    [Miscela] NVARCHAR(255),
+    [Foto] NVARCHAR(MAX),
+    [Descrizione] NVARCHAR(MAX),
+    [Prezzo] DECIMAL(10, 2)
+);
+
+
+
+INSERT INTO [Caffé].[dbo].[Prodotti] 
+            ([Marca], [Miscela], [Foto], [Descrizione], [Prezzo])
+VALUES      ('Borbone', 'Miscela Blu', 'https://www.caffereginacarola.com/wp-content/uploads/2021/07/cialda-borbone-blu.jpg', 'Caffè Borbone Cialde Miscela Blu - Confezione da 150 Pezzi. Compatibili E.S.E.®* dm 44. - E.S.E. sono marchi registrati dal consorzio EASY SERVING ESPRESSO. La produzione di queste cialde è autonoma non collegata né direttamente e né indirettamente alla EASY SERVING ESPRESSO.', 28.61),
+            ('Borbone', 'Miscela Rossa', 'https://m.media-amazon.com/images/I/61dY4rlS6VL._AC_UL320_.jpg', 'Caffè Borbone Cialde Miscela Rossa - Confezione da 150 Pezzi. Compatibili E.S.E.®* dm 44. - E.S.E. sono marchi registrati dal consorzio EASY SERVING ESPRESSO. La produzione di queste cialde è autonoma non collegata né direttamente e né indirettamente alla EASY SERVING ESPRESSO.', 26.20),
+            ('Borbone', 'Miscela Nera', 'https://m.media-amazon.com/images/I/61iBSQ5xWJL._AC_UL320_.jpg', 'Caffè Borbone Cialde Miscela Nera - Confezione da 150 Pezzi. Compatibili E.S.E.®* dm 44. - E.S.E. sono marchi registrati dal consorzio EASY SERVING ESPRESSO. La produzione di queste cialde è autonoma non collegata né direttamente e né indirettamente alla EASY SERVING ESPRESSO.', 21.90),
+			('BellCaffé', 'Miscela Gold', 'https://bellcaffe.it/wp-content/uploads/2021/02/cialda-gold.png', 'caffè dal profumo intenso e dall’aroma dolce e persistente. Crema densa e persistente, bevanda corposa.  miscela di arabica e robusta.', 29.99),
+			('TO.DA', 'Miscela Gusto Crema', 'https://m.media-amazon.com/images/I/71b44pFmdbL._AC_UL320_.jpg', 'La confezione del prodotto può contenere informazioni diverse rispetto a quelle mostrate sul nostro sito. Si prega di leggere sempre l’etichetta, gli avvertimenti e le istruzioni fornite sul prodotto prima di utilizzarlo o consumarlo.', 21.41),
+			('POP caffé', 'Miscela Cremoso', 'https://m.media-amazon.com/images/I/51mLqvi-bjL._AC_SL1000_.jpg', 'Una miscela equilibrata frutto della selezione delle migliori qualità di robusta e arabica. Crema densa e persistente.', 22.99),
+			('POP caffé', 'Miscela Intenso', 'https://m.media-amazon.com/images/I/51XqI+C1zTL._AC_SL1000_.jpg', 'Una miscela forte decisa frutto della selezione delle migliori qualità di robusta. La carica giusta quando serve', 20.90),
+			('POP caffé', 'Miscela Arabico', 'https://m.media-amazon.com/images/I/51ZHDdS259L._AC_SL1000_.jpg', 'Una miscela aromatica e speziata frutto della selezione delle migliori qualità di arabica.', 22.99),
+			('POP caffé', 'Miscela Decaffeinato', 'https://m.media-amazon.com/images/I/51xWDzmhUtL._AC_SL1000_.jpg', 'Un decaffeinato per chi non vuole rinunciare al piacere di un buon caffè. Decaffeinato naturalmente con metodo ad acqua.', 20.90);
